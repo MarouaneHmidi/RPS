@@ -4,18 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elements</title>
+    <title>Elements with UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="flex-container">
-        <h1>Elements</h1>
-        <button onclick="game()">Start Game</button>
+   <div class="score">
+        <h1 class="ties">Ties: 0</h1>
+   </div>
+   <div class="winnerDiv">
+    <h1 class="winner"></h1>
+    <button class="reset" onclick="resetGame()">Play again?</button>
+   </div>
+   <div class="playerSection">
+    <h3 class="playerChoice"></h3>
+    <h3 class="playerScore">Score: 0</h3>
+    <div class="playerImgs">
+        <img src="./images/fire.png" alt="fire" class="pImg" id="fire"/>
+        <img src="./images/grass.png" alt="grass" class="pImg" id="grass"/>
+        <img src="./images/water.png" alt="water" class="pImg" id="water"/>
     </div>
-
-  
+   </div>
+   <div class="computerSection">
+    <h3 class="computerChoice"></h3>
+    <h3 class="computerScore">Score: 0</h3>
+    <div class="computerImgs">
+        <img src="./images/fire.png" alt="fire" class="fire"/>
+        <img src="./images/grass.png" alt="grass" class="grass"/>
+        <img src="./images/water.png" alt="water" class="water"/>
+    </div>
+   </div>
 </body>
     <script src="app.js"></script>
-    
-
 </html>
